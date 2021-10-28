@@ -31,7 +31,9 @@ jobs:
         
       - name: Install Umbraco
         run: dotnet new umbraco --name MyProject
-        
+      
+      - run: git config user.name "Umbraco"
+      - run: git config user.email "<bot@umbraco.com>"
       - run: git add .
       - run: git status
       - run: git commit -m "Inital commit of Umbraco"
