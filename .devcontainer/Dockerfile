@@ -17,3 +17,7 @@ RUN bash ./installSQLtools.sh \
 
 # [Optional] Uncomment this line to install global node packages.
 # RUN su vscode -c "source /usr/local/share/nvm/nvm.sh && npm install -g <your-package-here>" 2>&1
+
+# Generate and trust a local developer certificate for Kestrel
+# This is needed for Kestrel to bind on https
+RUN dotnet dev-certs https --trust
