@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/MyRepoNameFromTemplate/MyRepoNameFromTemplate.csproj",
+                "${workspaceFolder}/MyProject/MyProject.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/MyRepoNameFromTemplate/MyRepoNameFromTemplate.csproj",
+                "${workspaceFolder}/MyProject/MyProject.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/MyRepoNameFromTemplate/MyRepoNameFromTemplate.csproj",
+                "${workspaceFolder}/MyProject/MyProject.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
