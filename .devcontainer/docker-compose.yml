@@ -26,6 +26,15 @@ services:
 
     # Use "forwardPorts" in **devcontainer.json** to forward an app port locally. 
     # (Adding the "ports" property to this file will not forward from a Codespace.)
+    
+    # DotNetCore ENV Variables
+    # https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-5.0#environment-variables
+    environment:
+    - ConnectionStrings__umbracoDbDSN=server=localhost;database=UmbracoWebsite;user id=sa;password='P@ssw0rd'
+    - Umbraco__CMS__Unattended__InstallUnattended=true
+    - Umbraco__CMS__Unattended__UnattendedUserName=Admin
+    - Umbraco__CMS__Unattended__UnattendedUserEmail=test@umbraco.com
+    - Umbraco__CMS__Unattended__UnattendedUserPassword=password1234
 
   db:
     image: mcr.microsoft.com/mssql/server:2019-latest
